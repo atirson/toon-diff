@@ -87,8 +87,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7635452983056415"
-     crossOrigin="anonymous"></script>
+      <head>
+        <meta name="google-adsense-account" content="ca-pub-7635452983056415" />
+      </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"

@@ -15,6 +15,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 import { initializeApp } from "firebase/app";
 import { getAnalytics, logEvent } from "firebase/analytics";
+import { Adsense } from '@/components/ad-sense';
 
 // -------------------------------------------
 // FIREBASE
@@ -213,6 +214,10 @@ export default function Home() {
 
         <div className="flex flex-wrap gap-3 mb-8">
         <Button onClick={handleCompare} disabled={!contentA || !contentB} className="flex items-center gap-2" > <svg width="20" height="20" viewBox="0 0 20 20" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2"> <line x1="4" y1="7" x2="16" y2="7" /> <line x1="4" y1="13" x2="16" y2="13" /> <line x1="5" y1="5" x2="15" y2="15" /> </svg> Compare Documents </Button>
+        </div>
+
+        <div style={{ minHeight: "100px" }} className="my-8">
+          <Adsense slot="4549931740" />
         </div>
 
         <Tabs value={activeTab} onValueChange={handleTabChange} className="w-full">

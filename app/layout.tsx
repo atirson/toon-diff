@@ -5,8 +5,6 @@ import { ThemeProvider } from '@/components/theme-provider';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const dynamic = 'force-static';
-
 export const metadata: Metadata = {
   metadataBase: new URL('https://toondiff.com'),
 
